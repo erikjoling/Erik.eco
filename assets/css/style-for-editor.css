@@ -1,0 +1,10 @@
+/**
+In this file we provide styles which target the editor specifically
+
+We want our general styles to work both on the frontend and backend. But 
+sometimes we need to provide specific editor styles to offer a userfriendly
+experience. 
+
+The goal is to keep this file to a minimum. 
+*/
+
