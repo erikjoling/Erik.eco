@@ -1,7 +1,9 @@
 {
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
 	"version": 3,
 	"settings": {
 		"useRootPaddingAwareAlignments": true,
+		"appearanceTools": true,
 		"color": {
 			"defaultGradients": false,
 			"defaultPalette": false,
@@ -14,7 +16,51 @@
 			"duotone": []
 		},
 		"typography": {
-			"fontFamilies": [],
+			"fontFamilies": [
+				{
+					"name": "Default",
+					"slug": "default",
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
+				},
+				{
+					"name": "Caveat",
+					"slug": "caveat",
+					"fontFamily": "Caveat, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Caveat",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/fonts/caveat/caveat-v23-latin-regular.woff2" ]
+						},
+						{
+							"fontFamily": "Caveat",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/fonts/caveat/caveat-v23-latin-700.woff2" ]
+						}
+					]
+				},
+				{
+					"name": "Kalam",
+					"slug": "kalam",
+					"fontFamily": "Kalam, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Kalam",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/fonts/kalam/kalam-v18-latin-300.woff2" ]
+						},
+						{
+							"fontFamily": "Kalam",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"src": [ "file:./assets/fonts/kalam/kalam-v18-latin-700.woff2" ]
+						}
+					]
+				}
+			],
 			"fontSizes": [],
 			"customFontSize": false,
             "lineHeight": true,
@@ -46,7 +92,9 @@
 	},
 	"styles": {
 		"color": {},
-		"typography": {},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--caveat)"
+		},
 		"spacing": {
 			"blockGap": "var(--wp--preset--spacing--50)",
 			"padding": {
