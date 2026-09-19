@@ -75,31 +75,46 @@
 			"defaultFontSizes": false,
 			"fontSizes": [
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "1rem",
+						"min": "0.875rem"
+					},
 					"name": "Small",
 					"size": "1rem",
 					"slug": "small"
 				},
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "1.25rem",
+						"min": "1rem"
+					},
 					"name": "Medium",
 					"size": "1.25rem",
 					"slug": "medium"
 				},
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "1.625rem",
+						"min": "1.25rem"
+					},
 					"name": "Large",
 					"size": "1.625rem",
 					"slug": "large"
 				},
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "2.25rem",
+						"min": "1.625rem"
+					},
 					"name": "Extra Large",
 					"size": "2.25rem",
 					"slug": "x-large"
 				},
 				{
-					"fluid": false,
+					"fluid": {
+						"max": "3rem",
+						"min": "2rem"
+					},
 					"name": "Extra Extra Large",
 					"size": "3rem",
 					"slug": "xx-large"
@@ -139,32 +154,32 @@
 				},
 				{
 					"name": "X-Small",
-					"size": "1rem",
+					"size": "clamp(0.625rem, 3vw, 1rem)",
 					"slug": "30"
 				},
 				{
 					"name": "Small",
-					"size": "1.75rem",
+					"size": "clamp(1.25rem, 5vw, 1.75rem)",
 					"slug": "40"
 				},
 				{
 					"name": "Regular",
-					"size": "2.75rem",
+					"size": "clamp(1.5rem, 5vw, 2.75rem)",
 					"slug": "50"
 				},
 				{
 					"name": "Large",
-					"size": "4rem",
+					"size": "clamp(2rem, 7vw, 4rem)",
 					"slug": "60"
 				},
 				{
 					"name": "X-Large",
-					"size": "5rem",
+					"size": "clamp(2.5rem, 7vw, 5rem)",
 					"slug": "70"
 				},
 				{
 					"name": "XX-Large",
-					"size": "8rem",
+					"size": "clamp(4rem, 10vw, 8rem)",
 					"slug": "80"
 				}
 			],
